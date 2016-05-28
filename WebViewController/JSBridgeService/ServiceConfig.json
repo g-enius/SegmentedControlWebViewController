@@ -1,0 +1,38 @@
+{
+    "services":[
+    {
+        "domain":"LDPMJSBridgeNavigationService",
+        "exports":[
+        {
+            "showname":"openView",
+            "realname":"openViewController",
+            "level": 0
+        },
+        {
+            "showname":"exchangeLoginFinish",
+            "realname":"exchangeLoginStatusFinished",
+            "level":0
+        }],
+        "islocal":true
+    },
+    {
+        "domain":"LDPMJSBridgeShareService",
+        "exports":[
+        {
+            "showname":"share",
+            "realname":"share",
+            "level":0
+        },
+        {
+            "showname":"transShareData",
+            "realname":"transShareData",
+            "level":0
+        },
+        {
+            "showname":"toggleShareButton",
+            "realname":"toggleShareButton",
+            "level":0
+        }],
+        "islocal":true
+    }]
+}

@@ -1,0 +1,28 @@
+;(function() {
+    var jsbridge = window.jsbridge;
+
+    window.mapp = {
+        ui : {
+            openView : function(params, callback) {
+            	jsbridge.invoke('openView', params, callback)
+            },
+        	toggleShareButton : function(params, callback) {
+        		jsbridge.invoke('toggleShareButton', params, callback)
+        	}         
+        },
+        account : {
+        	exchangeLoginFinish : function(params, callback) {
+            	jsbridge.invoke('exchangeLoginFinish', params, callback)
+            }
+        },
+        social : {
+        	share : function(params, callback) {
+        		jsbridge.invoke('share', params, callback)
+        	},
+        	transShareData : function(params, callback) {
+        		jsbridge.invoke('transShareData', params, callback)
+        	}
+        }
+    };
+})();
+
